@@ -1,0 +1,87 @@
+  body {
+    display: flex;
+    flex-direction: column;  
+    height: 100vh;  
+  }
+
+  /* Style for the header */
+
+
+
+  /*header {
+    display: flex;
+    
+       
+}*/
+
+header ul{
+    background-color: lightblue;  
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+header ul li a{
+    text-align: center; 
+    float: right;  
+    display: block;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+  /* Set up the main as a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;  
+    flex: auto;  
+    height: auto;  
+    width: auto;
+}
+
+
+
+
+
+.logo {
+    display: block;
+    
+
+}
+/* Style for the footer */
+footer {
+    background-color: lightcoral;  
+    padding: 20px;
+    margin-left: 0;
+}
+
+/* Article takes 2/3 of the main container width */
+article {
+    flex: 2;  
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+aside {
+    flex: 1;  
+    padding: 20px;
+    overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+    body.works_on_smartphone main {
+        display: block;
+    }
+    header .right {
+        float: none;
+    }
+  }
