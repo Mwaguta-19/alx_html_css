@@ -1,0 +1,57 @@
+  body {
+    display: flex;
+    flex-direction: column;  
+    height: 100vh;  
+  }
+
+  /* Set up the main as a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;  
+    flex: auto;  
+    height: auto;  
+}
+
+/* Style for the header */
+header {
+    background-color: lightblue;  
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the footer */
+footer {
+    background-color: lightcoral;  
+    padding: 20px;
+    text-align: center;
+}
+
+/* Article takes 2/3 of the main container width */
+article {
+    flex: 2;  
+    padding: 20px;
+    overflow-y: auto; 
+}
+.logo {
+    margin-left: 2rem;
+
+}
+
+
+aside {
+    flex: 1;  
+    padding: 20px;
+    overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+    body.works_on_smartphone main {
+        display: block;
+    }
+    header .right {
+        float: none;
+    }
+  }
