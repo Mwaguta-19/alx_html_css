@@ -355,3 +355,37 @@ header img{
     margin-top: 5px;
     padding: 10px;
 }
+
+/*FAQ section */
+
+.faq {
+    padding: 20px;
+    margin: 40px;
+}
+
+.faq h2{
+    text-align: center;
+    padding: 50px;
+}
+
+
+.main-faq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    grid-template-rows: repeat(4, auto);   /* 4 rows with auto height based on content */
+    gap: 20px; /* Space between the columns and rows */
+}
+
+.faq-content {
+    padding: 15px;
+}
+
+.faq h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faq-content div {
+    margin-bottom: 10px; /* Space between question and answer */
+}
