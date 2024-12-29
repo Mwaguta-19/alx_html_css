@@ -82,8 +82,7 @@ header img{
     border-radius: 20px;
     padding: 15px;
     color: white;
-    outline: 0.5px solid white;
-    box-shadow: rgb(68, 67, 67);
+    box-shadow: rgb(238, 231, 231);
 }
     
     
@@ -127,6 +126,8 @@ header img{
     border-radius: 50%;
     
 }
+
+/* Presenter section*/
 
 .presenter-container{
     font-family: Arial, Helvetica, sans-serif;
@@ -173,4 +174,127 @@ header img{
     font-style: italic;
 }
 
+/* Tutorial Section */
+
+.tutorial-container{
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 30px;
+}
+.tutorial-container span{
+    color:violet;
+}
+.tutorial-container h2{
+    text-align: center;
+    margin-top: 5px;
+    margin: 10px;
+    padding: 50px;
+}
+
+.main-tutorial-1 p{
+    padding: 10px;
+}
+
+
+.main-tutorial-1 .icon{
+    height: 50px;
+    width: 50px;
+}
+.main-tutorial-1 h3{
+    padding: 20px;
+    
+}
+
+.star{
+   
+    display:block;
+    flex-direction: row;
+    
+}
+
+.tutorials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start;
+  
+}
+
+
+.main-tutorial-1 .star-rating{
+    background-image:url(./images/rating.png);
+    background-repeat: no-repeat;
+}
+
+.rating-img{
+    display:flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+    
+
+}
+
+.superhero {
+    display: flex;
+    flex-direction: column; 
+    gap:20px; 
+    border-radius: 8px;
+}
+
+/* Styling for the first row (hero image and name) */
+.hero {
+    margin-top: 20px;
+    color: #da70d6;
+    display: flex; 
+    align-items: center; 
+    gap: 10px; /* Space between the image and name */
+}
+
+/* Styling for the image */
+.icon {
+    width: 50px; /* Set image size */
+    height: 50px; /* Set image size */
+    border-radius: 50%; /* Optional: to make the image circular */
+}
+
+/* Styling for the second row (rating image and time) */
+.rating-info {
+    display: flex; /* Arrange rating and time horizontally */
+    align-items: center; /* Vertically align items */
+    gap:5px; 
+    margin-left: 10px;
+
+}
+
+.rating-info p {
+    margin: 10px; 
+    font-size: 12px; 
+    color: #d29beb;
+}
+
+.icon-container{
+    border-radius: 10px;
+    position: relative;
+    width: 300px; /* You can adjust the width */
+    height: 150px;
+}
+.icon-play{
+    position: absolute;
+    opacity: 0.5;
+    object-fit: cover;    
+}
+
+.icon-play1{
+    position: absolute;
+    align-items: center;
+    vertical-align: middle;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
