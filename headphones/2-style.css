@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.hero{
+    background-image:url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+    
+}
+
+.hero-header{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20%;
+    position: sticky;
+
+}
+
+.hero-header img{
+    width: 150px;
+}
+.hamburger {
+    font-size: 30px;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle{
+    display: none;
+    visibility: hidden;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li a:hover{
+    color: red;
+}
+
+
+
+.nav-links ul li::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: auto;
+}
+
+.content1{
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+}
+.content1-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content1-text h1, p{
+    color:#fff;
+}
+.content1-text p{
+    text-align: center;
+    padding: 2% 10%;
+    color:white;
+    font-family:'Georgia', 'Times New Roman', 'serif';
+    font-size: 16px;
+}
+.content1-btn{
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.content1-btn a{
+    color: #fff;
+    border: 1 solid white;
+    background-color:#d85b5b;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 30px;
+    transition: opacity 0.3s ease;
+
+}
+
+.content1-btn a:hover,
+.content1-btn a:active {
+    opacity: 0.9;
+}
+
+/* What to do section*/
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;  /* Add space around the section */
+    color: white;
+    text-align: center;
+}
+
+
+.work-section-title {
+    margin-bottom: 40px;
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+.work-section-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0a0303;
+}
+
+
+.work-section-title P {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 900px;
+    color:#0a0303;
+    margin: 0 auto;
+}
+
+.media-files {
+    display: flex;
+    justify-content: space-around;  /* Distribute items evenly in a row */
+    gap: 30px;  /* Space between items */
+    max-width: 1200px; /* Limit the width for large screens */
+    margin: 0 auto;
+    flex-wrap: wrap;  /* Allows items to wrap to the next row on smaller screens */
+}
+
+.media-img {
+    display: flex;
+    flex-direction: row;  /* Set the flex direction to row */
+    justify-content: space-around;  /* Space items evenly */
+    flex-wrap: nowrap;  /* Prevent wrapping */
+    gap: 30px;  /* Space between each list item */
+}
+
+.media-img li {
+    width: 220px;  /* Adjust the width of each item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+
+.media-img li img {
+    width: 60px;  /* Adjust image size */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+img[src="iconimage/ic_sound.svg"] {
+    filter: hue-rotate(0deg) saturate(100%) brightness(0) invert(34%) sepia(93%) saturate(5457%) hue-rotate(354deg) brightness(97%) contrast(94%);
+}
+
+img[src="iconimage/ic_video.svg"] {
+    filter: hue-rotate(0deg) saturate(100%) brightness(0) invert(34%) sepia(93%) saturate(5457%) hue-rotate(354deg) brightness(97%) contrast(94%);
+}
+
+img[src="iconimage/ic_music.svg"] {
+    filter: hue-rotate(0deg) saturate(100%) brightness(0) invert(34%) sepia(93%) saturate(5457%) hue-rotate(354deg) brightness(97%) contrast(94%);
+}
+
+
+img[src="iconimage/ic_hearing.svg"] {
+    filter: hue-rotate(0deg) saturate(100%) brightness(0) invert(34%) sepia(93%) saturate(5457%) hue-rotate(354deg) brightness(97%) contrast(94%);
+}
+.media-img li h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0a0303;
+    margin: 10px 0;
+}
+
+.media-img li p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #0a0303;
+}
+
+/* Results section*/
+.results-container {
+    background: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.results-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.results-content h3{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.results-pentagon {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.results-pentagon li {
+    position: relative; /* Position relative to allow absolute positioning of text */
+    width: 220px;
+    height: 210px; /* Make the list items square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pentagon-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.pentagon-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pentagon-text {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Vertically center text */
+    left: 50%; /* Horizontally center text */
+    transform: translate(-50%, -50%); /* Ensure perfect centering */
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.pentagon-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.pentagon-text p {
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .results-pentagon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .results-pentagon li {
+        width: 80%; /* Make list items wider on smaller screens */
+        height: 200px; /* Adjust height */
+    }
+
+    .pentagon-text h1 {
+        font-size: 20px;
+    }
+
+    .pentagon-text p {
+        font-size: 20px;
+    }
+}
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+    .hero-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .hero-header img {
+        width: 120px;
+    }
+
+    .nav-links {
+        text-align: center;
+        margin-top: 15px;
+        display: none;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .content1-text h1 {
+        font-size: 24px;
+    }
+
+    .content1-text h3 {
+        font-size: 18px;
+        padding: 5%;
+    }
+
+    .content1-btn a {
+        padding: 15px;
+        font-size: 14px;
+    }
+    .menu-toggle{
+        visibility: visible;
+    }
+
+     
+    /* Show hamburger icon for mobile */
+    .hamburger {
+        display: block; /* Make hamburger visible on mobile */
+    }
+
+    /* Toggle the menu visibility using the checkbox */
+    #menu-toggle:checked + .hamburger {
+        content: "\00d7"; /* Change to X (Unicode for multiplication sign) */
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #menu-toggle:checked + .hamburger + .nav-links {
+        display: block; /* Show the menu */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work-section-title h2 {
+        font-size: 30px; /* Reduce heading size for tablets */
+    }
+
+    .work-section-title p {
+        font-size: 16px; /* Smaller paragraph text for tablets */
+    }
+
+    .media-files {
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center;
+    }
+
+    .media-img {
+        flex-direction: column;  /* Stack items vertically */
+        gap: 20px;  /* Reduce gap between items */
+    }
+
+    .media-img li {
+        width: 80%;  /* Make each list item take up more space */
+        max-width: 250px; /* Limit max width of list items */
+    }
+
+    .media-img li img {
+        width: 50px;  /* Smaller image size on tablets */
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .work-section-title h2 {
+        font-size: 24px; /* Smaller heading size for mobile */
+    }
+
+    .work-section-title p {
+        font-size: 14px; /* Smaller paragraph text for mobile */
+        max-width: 100%; /* Allow text to fit the screen width */
+    }
+
+    .media-files {
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center;
+    }
+
+    .media-img {
+        flex-direction: column;  /* Stack items vertically */
+        gap: 15px;  /* Reduce gap between items */
+    }
+
+    .media-img li {
+        width: 90%;  /* Make each list item take up more space */
+        max-width: 200px; /* Limit max width of list items */
+    }
+
+    .media-img li img {
+        width: 45px;  /* Smaller image size on mobile */
+        height: 45px;
+    }
+}
