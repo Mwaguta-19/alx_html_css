@@ -28,6 +28,13 @@
 .hero-header img{
     width: 150px;
 }
+.hamburger {
+    font-size: 30px;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 
 .nav-links{
     flex: 1;
@@ -118,6 +125,7 @@
     .nav-links {
         text-align: center;
         margin-top: 15px;
+        display: none;
     }
 
     .nav-links ul li {
@@ -137,5 +145,21 @@
     .content1-btn a {
         padding: 15px;
         font-size: 14px;
+    }
+
+     
+    /* Show hamburger icon for mobile */
+    .hamburger {
+        display: block; /* Make hamburger visible on mobile */
+    }
+
+    /* Toggle the menu visibility using the checkbox */
+    #menu-toggle:checked + .hamburger {
+        content: "\00d7"; /* Change to X (Unicode for multiplication sign) */
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #menu-toggle:checked + .hamburger + .nav-links {
+        display: block; /* Show the menu */
     }
 }
